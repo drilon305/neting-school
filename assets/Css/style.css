@@ -49,6 +49,143 @@
 }
 
 /*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--text-color);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*=============== LAYOUT ===============*/
+    .container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+
+/*=============== HEADER & NAV ===============*/
+
+.header {
+    width: 100%;
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__dark {
+    display: none;
+}
+
+.nav__link,
+.nav__toggle {
+    color: #fff;
+    font-weight: var(--font-bold);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    margin-top: .75rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__close {
+    display: none;
+}
+
+
+/* Active link */
+
+.active-link {
+    position: relative;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    bottom: -.75rem;
+    left: 45%;
+    height: 5px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+}
+
+/* Change background header */
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== BUTTONS ===============*/
+
+.button {
+    display: inline-block;
+    color: var(--first-color);
+    padding: .8rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    background-color: var(--body-color);
+}
+
 
 
 /*=============== ABOUT ===============*/
