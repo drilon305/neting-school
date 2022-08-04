@@ -121,6 +121,12 @@ img {
     line-height: 140%;
 }
 
+.section__subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
 /*=============== HEADER & NAV ===============*/
 
 .header {
@@ -433,6 +439,67 @@ img {
 
 
 /*=============== TEACHERS ===============*/
+
+.teachers__container  {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
+
+
+.teacher__item {
+    background-color: var(--container-color);
+    padding: 1.875rem;
+    text-align: center;
+    border-radius: .4rem;
+}
+
+.teacher__img-box {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.teacher__img-box img {
+    transform: scale(1);
+    vertical-align: middle;
+    transition: .4s;
+}
+
+.teacher__img-box:hover img {
+    transform: scale(1.1);
+}
+
+.teacher__title {
+    display: inline-block;
+    font-size: var(--h3-font-size);
+    margin-bottom: .75rem;
+}
+
+.teacher__social {
+    display: flex;
+    justify-content: center;
+    column-gap: .6rem;
+}
+
+.teacher__social-link {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--border-color);
+    color: var(--title-color);
+    border-radius: .25rem;
+    transition: .4s;
+}
+
+.teacher__social-link:hover {
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+}
+
+.teacher__social-link i {
+    font-weight: var(--font-semibold);
+}
 
 
 /*=============== BRANDS ===============*/
