@@ -854,9 +854,81 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width:1206px) {}
+@media screen and (max-width:1206px) {
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
-@media screen and (max-width:1024px) {}
+    .about__course-item {
+        padding: 16px 18px;
+        height: 80px;
+    }
+
+    .about__container {
+        column-gap: 3rem;
+    }
+
+    .about__description {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .home {
+        min-height: 868px;
+    }
+
+    .home__data {
+        max-width: 550px;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .about__group {
+        justify-self: center;
+    }
+
+    .about__banner {
+        margin-top: -110px;
+    }
+
+    .about__thumb-img {
+        width: 270px;
+    }
+
+    .about__banner-img {
+        width: 180px;
+    }
+
+    .about__students {
+        margin-top: -80px;
+        margin-left: 220px;
+    }
+
+    .teachers__container,
+    .courses__container {
+        grid-template-columns: repeat(2, 340px);
+        justify-content: center;
+    }
+
+    .course__content {
+        padding: 1rem 1.25rem;
+    }
+
+    .course__more {
+        padding: .5rem 1.25rem;
+    }
+}
+
 
 /* For medium devices */
 @media screen and (max-width:767px) {}
