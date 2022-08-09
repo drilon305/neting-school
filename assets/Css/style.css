@@ -164,7 +164,7 @@ img {
 
 .nav__toggle {
     font-size: 1.5rem;
-    margin-top: .75rem;
+    margin-top: .25rem;
     cursor: pointer;
     display: none;
 }
@@ -1005,10 +1005,85 @@ img {
         grid-template-columns: repeat(3, 1fr);
         row-gap: 2.5rem;
      }
+    
+     .footer__container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        justify-items: start;
+     }
+
+     .home__title {
+        font-size: 2rem;
+     }
+
+     .footer__copy {
+        margin-top: 4.5rem;
+     }
 
 }
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .home__description {
+        padding-right: 0;
+    }
+
+    .about__thumb-img {
+        width: 240px;
+    }
+
+    .about__banner-img {
+        width: 160px;
+    }
+
+    .about__banner {
+        margin-top: -25px;
+    }
+
+    .about__students {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .brand__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
 
 /* For small devices */
-@media screen and (max-width:350px) {}
+@media screen and (max-width:350px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .home {
+        min-height: 668px;
+    }
+
+    .home__title {
+        font-size: var(--h1-font-size)
+     }
+
+     .home__subtitle {
+        font-size: var(--normal-font-size);
+     }
+
+     .home__description {
+        font-size: var(--normal-font-size);
+     }
+
+     .about__review {
+        top: 4.5rem;
+     }
+
+     .about__banner-img {
+        width: 140px;
+     }
+
+     .courses__container,
+     .teachers__container {
+        grid-template-columns: 1fr;
+     }
+}
