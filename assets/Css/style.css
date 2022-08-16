@@ -845,6 +845,7 @@ img {
 .details__container {
     grid-template-columns: 8fr 4fr;
     column-gap: 3rem;
+    align-items: flex-start;
 }
 
 .details__tag {
@@ -1013,6 +1014,100 @@ img {
     color: #fff;
 }
 
+.course__video {
+    background-color: var(--container-color);
+    padding: 1.875rem;
+}
+
+.course__video-thumb {
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+}
+
+.course__video-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.course__video-prices {
+    display: flex;
+    align-items: center;
+}
+
+.new__price {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    padding: .5rem;
+}
+
+.old__price {
+    font-size: var(--normal-font-size);
+    text-decoration: line-through;
+}
+
+.course__video-discount {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    height: 24px;
+    line-height: 24px;
+    padding: 0 .75rem;
+    color: #ff4690;
+    background: rgba(255, 70, 144,0.08);
+    font-weight: var(--font-semibold);
+    border-radius: .25rem;
+}
+
+.course__video-content {
+    margin-bottom: 2rem;
+}
+
+.course__video-group {
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+ 
+
+.course__video-group:not(:last-child) {
+    padding-bottom: .75rem;
+    margin-bottom: .75rem;
+    border-bottom: 1px solid #eef0f6;
+}
+
+.course__video-icon {
+    font-size: var(--h3-font-size);
+}
+
+.course__video-info {
+    font-weight: normal;
+    color: var(--first-color);
+    padding-right: .4rem;
+}
+
+.course__payment {
+    margin-bottom: 2rem;
+}
+
+.course__payment-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+
+.course__enroll-button {
+    color: #fff;
+    font-size: var(--normal-font-size);
+    background-color: var(--first-color);
+    padding: .5rem 0;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
 
 /*=============== CONTACT PAGE ===============*/
 
@@ -1104,7 +1199,6 @@ img {
     font-size: var(--normal-font-size);
     color: hsl(var(--hue), 8%, 75%);
     margin-top: 6rem;
-
 }
 
 /*=============== SCROLL BAR ===============*/
