@@ -867,7 +867,9 @@ img {
 
 .details__meta {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 4.4rem;
+    row-gap: 1.5rem;
     margin-bottom: 3rem;
 }
 
@@ -939,6 +941,8 @@ img {
 .instructors {
     display: flex;
     column-gap: 3.4rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
     margin-bottom: 2.5rem;
 }
 
@@ -1107,6 +1111,20 @@ img {
     align-items: center;
     column-gap: .25rem;
     cursor: pointer;
+}
+
+.enroll__button-icon {
+    font-size: 1.25rem;
+    transition: .4s;
+}
+
+.course__enroll-button:hover .enroll__button-icon {
+    transform: translateX(.25rem);
+}
+
+.recommended__courses {
+    margin-bottom: 3rem;
+    text-align: left;
 }
 
 /*=============== CONTACT PAGE ===============*/
@@ -1283,6 +1301,18 @@ img {
     .pagination {
         justify-content: center;
     }   
+
+    .details__container {
+        grid-template-columns: .8fr;
+        justify-content: center;
+        row-gap: 3rem;
+    }
+
+    .course__video-thumb {
+        width: 100%;
+    }
+
+
 }
 
 
@@ -1414,6 +1444,14 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .details__container {
+        grid-template-columns: 1fr;
+    }
+
+    .details__title {
+        font-size: var(--h1-font-size);
+    }
+
 }
 
 
@@ -1451,5 +1489,9 @@ img {
      .courses__container,
      .teachers__container {
         grid-template-columns: 1fr;
+     }
+
+     .course__video {
+        padding: 1.5rem;
      }
 }
